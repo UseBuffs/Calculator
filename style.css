@@ -1,0 +1,65 @@
+* {
+    font-family: serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, #888888, #686868);
+}
+
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);;
+}
+
+button {
+    font-size: 30px;
+    font-weight: 10;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+button:hover {
+    background-color: rgb(221, 251, 255);
+}
+
+.x2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1/-1;
+    background-color: #ffffff83;
+    display: flex;
+    justify-content: space-around;
+}
+
+.displayLeft{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.displayRight {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 10px;
+}
+
+.currentNum {
+    font-size: 50px;
+    color: rgb(15, 15, 15);
+}
+
+.previousNum {
+    color: #3a3a3a;
+}
